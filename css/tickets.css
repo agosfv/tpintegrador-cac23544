@@ -39,6 +39,47 @@
     color: azure;
 }
 
+/*-------------------------*/
+
+#cards{
+    display: flex;
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+
+}
+#estudiante{
+    border: solid 2px blue;
+    margin-right: 2px;
+
+}
+
+#trainee{
+    border: solid 2px lightseagreen;
+margin-left: 2px;
+margin-right: 2px;
+}
+#junior{
+    border: solid 2px yellow;
+margin-left: 2px;
+}
+
+#venta{
+    text-align: center;
+}
+#completa{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#btnform{
+    display: inline;
+background-color: rgb(153, 192, 96);
+border-color: rgb(153, 192, 96);
+margin: 10px;
+}
+
 @media (min-width: 1px) and (max-width: 768px) {
 
     #logo {
