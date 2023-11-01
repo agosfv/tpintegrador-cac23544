@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Compra Tickets</title>
 </head>
+
 <body>
     <nav class="container-fluid">
         <div id="navbar">
@@ -18,7 +20,7 @@
                     <h2 class="row col-xxl-2 col-xl-3 col-lg-8 col-md-6 col-sm-6" id="confbsas"> Conf Bs As </h2>
                 </span>
                 <span class="links">
-                    <a class="row col-xxl-1 col-xl-1 col-lg-1" id="laconf" href="">La conferencia</a>
+                    <a class="row col-xxl-1 col-xl-1 col-lg-1" id="laconf" href="../html/index.html">La conferencia</a>
                     <a class="row col-xxl-1 col-xl-1 col-lg-1" href="">Los oradores</a>
                     <a class="row col-xxl-1 col-xl-1 col-lg-1" href="">El lugar y la fecha</a>
                     <a class="row col-xxl-2 col-xl-1 col-lg-1" href="">Convi&eacute;rtete en orador</a>
@@ -33,7 +35,7 @@
                         Menu
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">La conferencia</a></li>
+                        <li><a class="dropdown-item" href="../html/index.html">La conferencia</a></li>
                         <li><a class="dropdown-item" href="#">Los oradores</a></li>
                         <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
                         <li><a class="dropdown-item" href="">Convi&eacute;rtete en orador</a></li>
@@ -46,6 +48,85 @@
             </section>
         </div>
     </nav>
+    <main>
+        <section>
+            <div class="row col-xxl-8 col-xl-8 col-lg-8 col-md-10 col-sm-10" id="cards">
+                <div class=" col" id="estudiante">
+                    <div>
+                        <div class="card-body">
+                            <h3 class="card-title">Estudiante</h3>
+                            <p>Tienen un descuento <br><strong>80%</strong></br>* presentar documentaci&oacute;n<br></7>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="trainee">
+                    <div>
+                        <div class="card-body">
+                            <h3 class="card-title">Trainee</h3>
+                            <p>Tienen un descuento <br><strong>50%</strong></br>* presentar documentaci&oacute;n<br></7>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col " id="junior">
+                    <div>
+                        <div class="card-body">
+                            <h3 class="card-title">Junior</h3>
+                            <p>Tienen un descuento <br><strong>15%</strong></br>* presentar documentaci&oacute;n<br></7>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="venta">
+                <p>VENTA</p>
+                <H2>VALOR DE TICKET $200</H2>
+            </div>
+        </section>
+        <section>
+            <div id="completa" class="row">
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    <br>
+                </div>
+                <div class="col-10">
+                    <input type="text" class="form-control" placeholder="Correo" aria-label="Last name">
+                    <br>
+                </div>
+                <div class="col-5">
+                    <label for="inputCity" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Cantidad">
+                </div>
+                <div class="col-5">
+                    <label for="inputState" class="form-label">Categoria</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elegi</option>
+                        <option selected>Estudiante</option>
+                        <option selected>Trainee</option>
+                        <option selected>Junior</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                <div class="row col-5">
+                    <button id="btnform" class="btn  btn-primary" type="button">Borrar</button></span>
+                    </div>
+                    <div class="row col-5">
+                        <button id="btnform" class="btn  btn-primary" type="button">Resumen</button>
+       </div>
+    </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div id="footer">
             <ul class="nav justify-content-center">
@@ -75,4 +156,5 @@
         </div>
     </footer>
 </body>
+
 </html>
