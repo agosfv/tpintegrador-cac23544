@@ -73,11 +73,15 @@ margin-left: 2px;
     display: flex;
     justify-content: center;
 }
+#botones{
+    display: inline-flex;
+    justify-content: center;
+}
 #btnform{
-    display: inline;
 background-color: rgb(153, 192, 96);
 border-color: rgb(153, 192, 96);
-margin: 10px;
+margin: 2px;
+
 }
 
 @media (min-width: 1px) and (max-width: 768px) {
