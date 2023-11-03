@@ -26,7 +26,11 @@
 
 #footer {
     background-color: rgb(108, 126, 173);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     margin: 10px;
+
 }
 
 #footer li {
@@ -73,16 +77,31 @@ margin-left: 2px;
     display: flex;
     justify-content: center;
 }
+#total{
+    display: inline;
+    background-color: lightblue;
+    margin: 10px;
+    border-radius: 5px;
+}
+
 #botones{
     display: inline-flex;
     justify-content: center;
 }
-#btnform{
+#borrar {
 background-color: rgb(153, 192, 96);
 border-color: rgb(153, 192, 96);
 margin: 2px;
 
 }
+#resumen {
+    background-color: rgb(153, 192, 96);
+    border-color: rgb(153, 192, 96);
+    margin: 2px;
+    
+    }
+    
+
 
 @media (min-width: 1px) and (max-width: 768px) {
 
