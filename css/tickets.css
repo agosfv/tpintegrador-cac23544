@@ -85,7 +85,8 @@ margin-left: 2px;
 }
 
 #botones{
-    display: inline-flex;
+    color: aliceblue;
+display: inline-flex;
     justify-content: center;
 }
 #borrar {
