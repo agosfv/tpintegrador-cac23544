@@ -31,11 +31,12 @@ let seleccion = document.getElementById('categoria').value;
 function borrar() {
     let borrar = confirm('¿Desea borrar el formulario?');
     if (borrar == true) {
-        let form = document.getElementById('completa')
-        form.addEventListener ("submit" , function(event) {
-            form.reset()
-        })
-        } else if ( borrar ==false) {
+document.getElementById("nombre").value = "";
+document.getElementById("apellido").value = "";
+document.getElementById("correo").value = "";
+document.getElementById("cantidad").value = "";
+        }
+    else if ( borrar ==false) {
             console.log('cancelado')
         }
     }
