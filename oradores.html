@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="http://localhost:8080/web-app/api/orador/nuevo" method="post">
+        <input name="nombre" id="nombre">
+        <input name="apellido" id="apellido">
+        <input name="email" id="email">
+        <input name="tema" id="tema">
+        <button type="submit" id="btnCrear">Enviar</button>
+    </form>
+    <script>
+        craerOperador = () => {
+            /* const orador = {
+                 nombre: document.getElementById("nombre").value,
+                 apellido: document.getElementById("apellido").value,
+                 email: document.getElementById("email").value,
+                 tema: document.getElementById("tema").value
+             }
+             */
+            const form = document.getElementById('formData');
+            const data = new FormData(form);
+
+
+            fetch('http://localhost:8080/web-app/api/orador/nuevo', {
+
+                method: "POST",
+                body: data
+            }).then(response => response.json())
+                .then(json => console.log(json))
+                .catch(err => console.log(err));
+        }
+
+        document.getElementById("btnCrear").addEventListener('click', crearOperador);
+    </script>
+</body>
+
+</html>
