@@ -1,0 +1,396 @@
+#confbsas {
+    color: azure;
+}
+
+.barranav span a {
+    color: rgb(199, 196, 196);
+}
+
+
+#laconf {
+    color: azure;
+}
+
+#tituloorador{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+#navbar {
+    background-color: grey;
+}
+
+.header {
+    height: auto;
+}
+
+html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+
+#footer {
+    background-color: rgb(108, 126, 173);
+    width: 100%;
+    bottom: 0;
+    margin: 10px;
+
+}
+
+#footer li {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#footer li a {
+    color: azure;
+}
+
+/*-------------------------*/
+
+#cards{
+    display: flex;
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+
+}
+#estudiante{
+    border: solid 2px blue;
+    margin-right: 2px;
+
+}
+
+#trainee{
+    border: solid 2px lightseagreen;
+margin-left: 2px;
+margin-right: 2px;
+}
+#junior{
+    border: solid 2px yellow;
+margin-left: 2px;
+}
+
+#venta{
+    text-align: center;
+}
+#completa{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#total{
+    display: inline;
+    background-color: lightblue;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#botones{
+    color: aliceblue;
+display: inline-flex;
+    justify-content: center;
+}
+#borrar {
+    color: aliceblue;
+background-color: rgb(153, 192, 96);
+border-color: rgb(153, 192, 96);
+margin: 2px;
+
+}
+#btnCrear {
+    color: aliceblue;
+    background-color: rgb(153, 192, 96);
+    border-color: rgb(153, 192, 96);
+    margin: 2px;
+    
+    }
+    
+
+
+@media (min-width: 1px) and (max-width: 768px) {
+
+    #logo {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #confbsas {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #navbar {
+        height: auto;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .links {
+        display: none;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+
+
+    #logo {
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #confbsas {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #navbar {
+        height: auto;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 221em;
+    }
+
+    .links {
+        display: none;
+    }
+
+   
+
+
+}
+
+@media (min-width: 961px) and (max-width: 1180px) {
+    #logo {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #confbsas {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #navbar {
+        height: auto;
+    }
+
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .links {
+        display: none;
+    }
+
+    .
+
+}
+
+@media (min-width: 1181px) and (max-width: 1399px) {
+    #logo {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #confbsas {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 3em;
+    }
+
+    #navbar {
+        height: auto;
+    }
+
+
+    #menu {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        font-size: 221em;
+    }
+
+    .links {
+        display: none;
+    }
+
+    
+}
+
+@media (min-width: 1400px) and (max-width: 2500px) {
+    .barranav {
+        margin: auto;
+        text-align: center;
+    }
+
+    #logo {
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+
+    #confbsas {
+        display: inline-flex;
+        justify-content: flex-start;
+
+    }
+
+    .barranav span a {
+        display: inline-flex;
+        justify-content: space-around;
+        text-align: center;
+        /*justify-content: space-around;*/
+        color: rgb(199, 196, 196);
+    }
+
+    #laconf {
+        color: azure;
+        margin: auto;
+    }
+
+    #compratik {
+        color: rgb(69, 223, 69);
+        margin: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    
+
+}
+
+@media (min-width: 2501px) and (max-width: 3500px) {
+
+    .barranav {
+
+        margin: auto;
+        text-align: center;
+
+    }
+
+    #logo {
+        display: inline-flex;
+        justify-content: space-around;
+    }
+
+    #confbsas {
+        display: inline-flex;
+        justify-content: space-around;
+
+    }
+
+    .barranav span a {
+        display: inline-flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: auto;
+        justify-content: space-around;
+        color: rgb(199, 196, 196);
+    }
+
+    #laconf {
+        color: azure;
+        margin: auto;
+    }
+
+    #compratik {
+        color: rgb(69, 223, 69);
+        margin: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+  
+
+}
+
+@media (min-width: 3501px) and (max-width: 9999px) {
+    .barranav {
+        margin: auto;
+        text-align: center;
+    }
+
+    #logo {
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+
+    #confbsas {
+        display: inline-flex;
+        justify-content: flex-start;
+
+    }
+
+    .barranav span a {
+        display: inline-flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: auto;
+        /*justify-content: space-around;*/
+        color: rgb(199, 196, 196);
+    }
+
+    #laconf {
+        color: azure;
+        margin: auto;
+    }
+
+    #compratik {
+        color: rgb(69, 223, 69);
+        margin: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+}

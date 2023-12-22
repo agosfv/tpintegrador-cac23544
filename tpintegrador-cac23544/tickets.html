@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tickets.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Compra Tickets</title>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <div id="navbar">
+            <section class="barranav">
+                <span id="logoh2">
+                    <img id="logo" class="row col-xxl-1 col-xl-1 col-lg-4 col-md-4 col-sm-4"
+                        src="./assets/codoacodo.png" alt="">
+                    <h2 class="row col-xxl-2 col-xl-3 col-lg-8 col-md-6 col-sm-6" id="confbsas"> Conf Bs As </h2>
+                </span>
+                <span class="links">
+                    <a class="row col-xxl-1 col-xl-1 col-lg-1" id="laconf" href="./index.html">La conferencia</a>
+                    <a class="row col-xxl-1 col-xl-1 col-lg-1" href="">Los oradores</a>
+                    <a class="row col-xxl-1 col-xl-1 col-lg-1" href="">El lugar y la fecha</a>
+                    <a class="row col-xxl-2 col-xl-1 col-lg-1" href="">Convi&eacute;rtete en orador</a>
+                    <a class="row col-xxl-1 col-xl-1 col-lg-1" id="compratik" href="">Compra tickets</a>
+                </span>
+
+            </section>
+            <section>
+                <div id="menu" class="dropdown row col-lg-2 col-md-2 col-sm-2">
+                    <button class="btn btn-lg btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./index.html">La conferencia</a></li>
+                        <li><a class="dropdown-item" href="#">Los oradores</a></li>
+                        <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
+                        <li><a class="dropdown-item" href="">Convi&eacute;rtete en orador</a></li>
+                        <li><a class="dropdown-item" href="./html/tickets.html">Compra tickets</a></li>
+                    </ul>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"></script>
+            </section>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <section>
+                <div class="row col-xxl-8 col-xl-8 col-lg-8 col-md-10 col-sm-10" id="cards">
+                    <div class=" col" id="estudiante">
+                        <div>
+                            <div class="card-body">
+                                <h3 class="card-title">Estudiante</h3>
+                                <p>Tienen un descuento <br><strong>80%</strong></br>* presentar documentaci&oacute;n<br>
+                                    </7>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="trainee">
+                        <div>
+                            <div class="card-body">
+                                <h3 class="card-title">Trainee</h3>
+                                <p>Tienen un descuento <br><strong>50%</strong></br>* presentar documentaci&oacute;n<br>
+                                    </7>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col " id="junior">
+                        <div>
+                            <div class="card-body">
+                                <h3 class="card-title">Junior</h3>
+                                <p>Tienen un descuento <br><strong>15%</strong></br>* presentar documentaci&oacute;n<br>
+                                    </7>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="venta">
+                    <p>VENTA</p>
+                    <H2>VALOR DE TICKET $200</H2>
+                </div>
+            </section>
+            <div id="completa" class="row">
+    
+                    <div class="col-5">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre"
+                            aria-label="First name">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" id="apellido" class="form-control" placeholder="Apellido"
+                            aria-label="Last name">
+                        <br>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" id="correo" class="form-control" placeholder="Correo" aria-label="Last name">
+                        <br>
+                    </div>
+                    <div class="col-5">
+                        <label for="cantidad" class="form-label" type="number">Cantidad</label>
+                        <input class="form-control" id="cantidad" placeholder="Cantidad" onclick="prompt">
+                    </div>
+
+                    <div class="col-5">
+                        <label for="categoria" class="form-label">Categoria</label>
+                        <select id="categoria" class="form-select">
+                            <option value="elegi" id="selelegi" selected>Elegi</option>
+                            <option value="estudiante" id="selestudiante" selected>Estudiante</option>
+                            <option value="trainee" id="seltrainee" selected>Trainee</option>
+                            <option value="junior" id="seljunior" selected>Junior</option>
+                        </select>
+                    </div>
+                    <div id="total" class="row col-10">
+                        Total a pagar: $ <span id="resumenPrecio"> </span>
+                    </div>
+                    <div id="botones">
+                        <button onclick="borrar()" type="button" class="row col-5 btn " id="borrar">Borrar</button>
+                        <button onclick="resumenPrecio()" type=" submit " class="row col-5 btn"
+                            id="resumen">Resumen</button>
+                    </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">conferencias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terminos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./tickets.js"></script>
+</body>
+
+</html>
